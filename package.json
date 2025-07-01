@@ -1,0 +1,23 @@
+{
+  "name": "ios-task-backend",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "scripts": {
+    "dev": "node --experimental-transform-types --watch ./index.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "consola": "^3.4.2",
+    "crossws": "^0.4.1",
+    "h3": "2.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "@tsconfig/node22": "^22.0.2",
+    "typescript": "^5.8.3"
+  }
+}

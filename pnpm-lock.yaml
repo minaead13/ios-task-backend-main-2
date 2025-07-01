@@ -1,0 +1,110 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      consola:
+        specifier: ^3.4.2
+        version: 3.4.2
+      crossws:
+        specifier: ^0.4.1
+        version: 0.4.1(srvx@0.8.1)
+      h3:
+        specifier: 2.0.0-beta.0
+        version: 2.0.0-beta.0(crossws@0.4.1(srvx@0.8.1))
+    devDependencies:
+      '@faker-js/faker':
+        specifier: ^9.8.0
+        version: 9.8.0
+      '@tsconfig/node22':
+        specifier: ^22.0.2
+        version: 22.0.2
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+packages:
+
+  '@faker-js/faker@9.8.0':
+    resolution: {integrity: sha512-U9wpuSrJC93jZBxx/Qq2wPjCuYISBueyVUGK7qqdmj7r/nxaxwW8AQDCLeRO7wZnjj94sh3p246cAYjUKuqgfg==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+
+  '@tsconfig/node22@22.0.2':
+    resolution: {integrity: sha512-Kmwj4u8sDRDrMYRoN9FDEcXD8UpBSaPQQ24Gz+Gamqfm7xxn+GBR7ge/Z7pK8OXNGyUzbSwJj+TH6B+DS/epyA==}
+
+  consola@3.4.2:
+    resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+
+  cookie-es@2.0.0:
+    resolution: {integrity: sha512-RAj4E421UYRgqokKUmotqAwuplYw15qtdXfY+hGzgCJ/MBjCVZcSoHK/kH9kocfjRjcDME7IiDWR/1WX1TM2Pg==}
+
+  crossws@0.4.1:
+    resolution: {integrity: sha512-E7WKBcHVhAVrY6JYD5kteNqVq1GSZxqGrdSiwXR9at+XHi43HJoCQKXcCczR5LBnBquFZPsB3o7HklulKoBU5w==}
+    peerDependencies:
+      srvx: '>=0.7.1'
+    peerDependenciesMeta:
+      srvx:
+        optional: true
+
+  fetchdts@0.1.5:
+    resolution: {integrity: sha512-GCxyHdCCUm56atms+sIjOsAENvhebk3HAM1CfzgKCgMRjPUylpkkPmNknsaXe1gDRqM3cJbMhpkXMhCzXSE+Jg==}
+
+  h3@2.0.0-beta.0:
+    resolution: {integrity: sha512-HYLTlAWdr4fL0oR8Lrb5wNMqQSzvi/Yn6kBk7CpuDiouPmOgJPQEET4HjJiJuAQxzF39Ol2cBvQagdOL/Zs3aw==}
+    engines: {node: '>=20.11.1'}
+    peerDependencies:
+      crossws: ^0.4.1
+    peerDependenciesMeta:
+      crossws:
+        optional: true
+
+  rou3@0.6.3:
+    resolution: {integrity: sha512-1HSG1ENTj7Kkm5muMnXuzzfdDOf7CFnbSYFA+H3Fp/rB9lOCxCPgy1jlZxTKyFoC5jJay8Mmc+VbPLYRjzYLrA==}
+
+  srvx@0.8.1:
+    resolution: {integrity: sha512-whxc91DGEICEa/iqN+0hl51Dlu8U5IZ25f5gZmKR0Q3IAtIvz3XEJ9G+gGIg7r4+gwE9fM1kj43xhJI8mfSw8w==}
+    engines: {node: '>=20.16.0'}
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@faker-js/faker@9.8.0': {}
+
+  '@tsconfig/node22@22.0.2': {}
+
+  consola@3.4.2: {}
+
+  cookie-es@2.0.0: {}
+
+  crossws@0.4.1(srvx@0.8.1):
+    optionalDependencies:
+      srvx: 0.8.1
+
+  fetchdts@0.1.5: {}
+
+  h3@2.0.0-beta.0(crossws@0.4.1(srvx@0.8.1)):
+    dependencies:
+      cookie-es: 2.0.0
+      fetchdts: 0.1.5
+      rou3: 0.6.3
+      srvx: 0.8.1
+    optionalDependencies:
+      crossws: 0.4.1(srvx@0.8.1)
+
+  rou3@0.6.3: {}
+
+  srvx@0.8.1:
+    dependencies:
+      cookie-es: 2.0.0
+
+  typescript@5.8.3: {}
